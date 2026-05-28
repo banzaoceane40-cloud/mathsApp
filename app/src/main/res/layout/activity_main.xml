@@ -11,13 +11,13 @@
         android:id="@+id/textNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your total"
+        android:text="Your total:"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <EditText
         android:id="@+id/birthdayTextInput"
@@ -26,6 +26,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Enter your birthday"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/submitButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,14 +34,16 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="96dp"
         android:text="Submit"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textNum"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

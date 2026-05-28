@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
             var total = calculateBirthday(birthday)
             textTotal.text = "Your total: $total"
         }
+
+        }
         fun calculateBirthday(num: Int): Int{
             var birthday = num
 
@@ -33,8 +35,6 @@ class MainActivity : AppCompatActivity() {
             birthday = birthday/2
 
             return birthday
-
-        }
 
 
 
