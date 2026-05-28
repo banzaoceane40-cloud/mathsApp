@@ -17,12 +17,23 @@ class MainActivity : AppCompatActivity() {
 
         var editBirthday = findViewById<EditText>(R.id.birthdayTextInput)
         var buttonCalculate = findViewById<Button>(R.id.submitButton)
-        var texTotal = findViewById<TextView>(R.id.textNum)
+        var textTotal = findViewById<TextView>(R.id.textNum)
 
         buttonCalculate.setOnClickListener{
             var birthday = editBirthday.text.toString().toInt()
             var total = calculateBirthday(birthday)
-            total.text = "Your total: $total"
+            textTotal.text = "Your total: $total"
+        }
+        fun calculateBirthday(num: Int): Int{
+            var birthday = num
+
+            birthday = birthday+10
+            birthday = birthday*3
+            birthday = birthday-5
+            birthday = birthday/2
+
+            return birthday
+
         }
 
 
