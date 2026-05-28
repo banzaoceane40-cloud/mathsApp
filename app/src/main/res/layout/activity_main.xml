@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7A0F0F"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your total:"
+        android:textColor="#FFFEFE"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +28,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Enter your birthday"
+        android:textColor="#FDFBFB"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/submitButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,9 +37,10 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="96dp"
+        android:backgroundTint="#383232"
         android:text="Submit"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textNum"
